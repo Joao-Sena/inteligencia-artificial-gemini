@@ -2,6 +2,12 @@ const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require("@googl
   
 const MODEL_NAME = "gemini-1.5-pro-latest";
 const API_KEY = "AIzaSyCFiyyMnnIu5Pqp2LyQg0HJi9doZDP9m9k";
+
+console.log('Script Integração IA inicializado!');
+const button = document.getElementById("botaoPergunta")
+button.addEventListener("click", event => {
+  runChat();
+});
   
 async function runChat() {
 
